@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Trillo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"> <img class="logo" src="assets/img/logo.png" alt=""/>
+        <form class="search" action="#">
+          <input class="search__input" type="text" placeholder="Search Hotels"/>
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="assets/img/sprite.svg#icon-bookmark"></use><span class="user-nav__notification">7</span>
+            </svg>
+          </div>
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="assets/img/sprite.svg#icon-chat"></use><span class="user-nav__notification">23</span>
+            </svg>
+            <ul class="modal-menu"> 
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Rebecca<span class="modal-menu__notification">3</span></a></li>
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Maria<span class="modal-menu__notification">2</span></a></li>
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Joe<span class="modal-menu__notification">4</span></a></li>
+            </ul>
+          </div>
+          <div class="user-nav__user"><img class="user-nav__user-photo" src="assets/img/user.jpg" alt=""/><span class="user-nav__user-name">Deebov</span>
+            <ul class="modal-menu"> 
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Profile</a></li>
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Settings</a></li>
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Messages<span class="modal-menu__notification">3</span></a></li>
+              <li class="modal-menu__item"> <a class="modal-menu__link" href="#">Log Out</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar"> 
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active"><a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-home"></use>
+                </svg><span>Hotel</span></a></li>
+            <li class="side-nav__item "><a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg><span>Flight</span></a></li>
+            <li class="side-nav__item "><a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-key"></use>
+                </svg><span>Car rental</span></a></li>
+            <li class="side-nav__item "><a class="side-nav__link" href="#">
+                <svg class="side-nav__icon">
+                  <use xlink:href="assets/img/sprite.svg#icon-map"></use>
+                </svg><span>Tours</span></a></li>
+          </ul>
+          <div class="legal"> &copy; 2018 by Deebov. All rights reserved.</div>
+        </nav>
+        <main class="hotel-view"> 
+          <div class="gallery"><span class="gallery__prev"><</span>
+            <figure class="gallery__item"><img class="gallery__photo" src="assets/img/hotel-1.jpg" alt=""/></figure>
+            <figure class="gallery__item"><img class="gallery__photo" src="assets/img/hotel-2.jpg" alt=""/></figure>
+            <figure class="gallery__item"><img class="gallery__photo" src="assets/img/hotel-3.jpg" alt=""/></figure><span class="gallery__next">></span>
+          </div>
+          <div class="overview">
+            <h1 class="overview__heading">Hotel Four Seasone</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon overview__icon--star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon overview__icon--star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon overview__icon--star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon overview__icon--star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon overview__icon--star">
+                <use xlink:href="assets/img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+            <div class="overview__location">
+              <svg class="overview__icon overview__icon--location">
+                <use xlink:href="assets/img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Madrid, Spain</button>
+            </div>
+            <div class="overview__rating">
+              <div class="overview__rating-average">8.6</div>
+              <div class="overview__rating-count">532 votes</div>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus itaque aliquid ipsa mollitia perferendis! Tempore?</p>
+              <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, voluptates?</p>
+              <ul class="list">
+                <li class="list__item">Close to the beach</li>
+                <li class="list__item">Breakfast included</li>
+                <li class="list__item">Free airport shuttle</li>
+                <li class="list__item">Free wi-fi in all rooms</li>
+                <li class="list__item">Air conditioning and heating</li>
+                <li class="list__item">Pets allowed</li>
+                <li class="list__item">We speak all languages</li>
+              </ul>
+              <div class="recommend">
+                <div class="recommend__count">Alex and 4 persons recommend this hotel</div>
+                <div class="recommend__persons"> <img class="recommend__photo" src="assets/img/user-3.jpg" alt=""/><img class="recommend__photo" src="assets/img/user-4.jpg" alt=""/><img class="recommend__photo" src="assets/img/user-5.jpg" alt=""/><img class="recommend__photo" src="assets/img/user-6.jpg" alt=""/>
+                </div>
+              </div>
+            </div>
+            <figure class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestiae nisi quasi nesciunt iure rem assumenda dolor aperiam rerum quibusdam!</blockquote>
+                <figcaption class="review__user"><img class="review__photo" src="assets/img/user-1.jpg" alt=""/>
+                  <div class="review__user-box">
+                    <p class="review__user-name">Bill Gates</p>
+                    <p class="review__user-date">Jul 2nd, 2018</p>
+                  </div>
+                  <div class="review__rating">7.5</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, molestiae nisi quasi nesciunt iure rem assumenda dolor aperiam rerum quibusdam!</blockquote>
+                <figcaption class="review__user"><img class="review__photo" src="assets/img/user-3.jpg" alt=""/>
+                  <div class="review__user-box">
+                    <p class="review__user-name">Jeff Bezos</p>
+                    <p class="review__user-date">Jul 6th, 2018</p>
+                  </div>
+                  <div class="review__rating">9.5</div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline user-reviews__show-btn">Show All <span>&rarr;</span></button>
+            </figure>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">Good News! We have 4 free rooms for  your selected dates!</h2>
+            <button class="btn"> <span class="btn__visible">Book now</span><span class="btn__invisible">Only 4 rooms left</span></button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
